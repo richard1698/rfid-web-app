@@ -1,0 +1,32 @@
+@import "../../scss/index.scss";
+
+.auth {
+  width: 70% !important;
+  border: 1px solid gray;
+  border-radius: 30px !important;
+  position: relative;
+
+  .ui.grid {
+    > .row {
+      width: 100% !important;
+      > .column:nth-child(2n) {
+        background-color: $primary-color;
+        color: $font-light;
+      }
+      > .column {
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        height: 100%;
+        width: 50% !important;
+        width: fit-content;
+        position: relative !important;
+        /*-login-form {
+          background-color: $primary-color;
+          color: $font-light;
+        }*/
+      }
+    }
+  }
+}

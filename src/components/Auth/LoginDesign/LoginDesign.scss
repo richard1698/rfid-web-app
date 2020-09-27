@@ -1,0 +1,17 @@
+@import "../../../scss/index.scss";
+
+.login-design {
+  h1 {
+    span {
+      color: $font-primary;
+    }
+  }
+}
+
+.login-design > img {
+  margin-top: 80px;
+  object-fit: fill;
+  min-width: 300px;
+  min-height: 200px;
+  width: 80%;
+}
