@@ -1,12 +1,30 @@
 @import "../../scss/index.scss";
 
-.auth {
-  width: 70% !important;
-  border: 1px solid gray;
-  border-radius: 30px !important;
+.ui.card.auth {
+  width: 90% !important;
+  height: 90% !important;
+  border-radius: 30px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+  padding: 30px;
+}
 
-  .ui.grid {
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: $primary-color;
+  position: absolute;
+  z-index: 0;
+  margin-right: 160vh;
+  margin-bottom: 73vh;
+  border-radius: 20px;
+}
+
+/*
+.ui.grid {
     > .row {
       width: 100% !important;
       > .column:nth-child(2n) {
@@ -22,11 +40,12 @@
         width: 50% !important;
         width: fit-content;
         position: relative !important;
-        /*-login-form {
+        .login-form {
           background-color: $primary-color;
           color: $font-light;
-        }*/
+        }
       }
     }
   }
-}
+
+*/
