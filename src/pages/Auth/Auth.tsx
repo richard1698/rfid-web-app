@@ -6,13 +6,13 @@ import "./Auth.scss";
 
 function Auth(): JSX.Element {
   return (
-    <>
+    <div className="auth-page">
       <div className="square" />
       <div className="auth">
         <LoginDesign />
         <LoginForm />
       </div>
-    </>
+    </div>
   );
 }
 

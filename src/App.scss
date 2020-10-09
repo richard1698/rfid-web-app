@@ -1,11 +1,14 @@
 @import "./scss/colors";
 
 .App {
-  height: 100%;
+  /*height: 100%;
   text-align: center;
   padding: 4%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   background-color: $background-secondary;
+  min-height: 100%;
+  height: 100%;
+  max-height: max-content;
 }
