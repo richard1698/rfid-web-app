@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Icon, Form, Input } from "semantic-ui-react";
 
+import "./LoginForm.scss";
+
 function LoginForm(): JSX.Element {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -13,7 +15,9 @@ function LoginForm(): JSX.Element {
   return (
     <div className="login-form">
       <h2>Inicio de Sesión</h2>
-      <Form onSubmit={onSubmit} onChange={onChange}>
+      <div className="line-horizontal"></div>
+      <h3>Administra tu sitio web con facilidad</h3>
+      <Form className="form-data" onSubmit={onSubmit} onChange={onChange}>
         <Form.Field>
           <h3>Ingrese su correo electrónico</h3>
           <Input
@@ -42,10 +46,16 @@ function LoginForm(): JSX.Element {
             }
           />
         </Form.Field>
-        <Button type="submit" loading={isLoading}>
-          Iniciar Sesión
-        </Button>
+        <div className="square-login">
+          <span>¿Olvidó su contraseña?</span>
+          <Button type="submit" loading={isLoading}>
+            Iniciar Sesión
+          </Button>
+        </div>
       </Form>
+      <div className="footer-login">
+        <h2>Simple, rápido y seguro</h2>
+      </div>
     </div>
   );
 }

@@ -1,12 +1,59 @@
 @import "../../../scss/index.scss";
 
 .login-form {
-  background-color: $primary-color !important;
+  background-color: $primary-color;
   color: $font-light;
+  width: 35%;
+  padding: 6%;
+
+  h2 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  h3 {
+    margin-top: 8px;
+  }
+
+  .line-horizontal {
+    border-bottom: solid 3px $font-light;
+    width: 100%;
+  }
+
   .ui.form {
-    width: 35% !important;
-    height: 100%;
-    background-color: $primary-color !important;
-    color: $font-light;
+    padding-top: 15%;
+    h3 {
+      text-align: left;
+    }
+    .field {
+      .input {
+        input {
+          border-radius: 10px;
+          background: $font-light;
+        }
+      }
+    }
+
+    .square-login {
+      display: flex;
+      justify-content: space-evenly;
+      span {
+        margin-top: 30px;
+      }
+      .button {
+        background: $font-light;
+        padding: 15px;
+        border-radius: 15px;
+        margin-top: 4%;
+      }
+    }
+  }
+
+  .footer-login {
+    margin-top: 18%;
+    h2 {
+      font-weight: bold;
+      font-size: 3vh;
+    }
   }
 }
